@@ -25,3 +25,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.pattern {
+  --pattern: radial-gradient(closest-side, #777, #fff) 0/ 1em 1em space;
+  --map: 
+    radial-gradient(circle farthest-corner at var(--x) var(--y), #888, #fff);
+  height: 100%;
+  background: var(--pattern), var(--map);
+  background-blend-mode: multiply;
+  filter: contrast(16); 
+  transition: .35s cubic-bezier(.1,0,.5,1.5);
+  transition-property: --x, --y
+}

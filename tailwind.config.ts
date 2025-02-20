@@ -8,11 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)"],
+        openSans: ["var(--font-open-sans)"],
+        joseSans: "var(--font-jose-sans)",
+        merriWeather: "var(--font-merri-weather)",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        homeBg: "#eaeaf3",
+        homeHead: "#3d4048",
+        homeText: "#6A6A6A",
+        AboutBg: "#191416",
       },
     },
+    
   },
   plugins: [],
 };
